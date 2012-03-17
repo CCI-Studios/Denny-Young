@@ -28,9 +28,10 @@
 
 	<positions>
 		<position>header</position>
+		<position>top</position>
 		<position>sidebar</position>
 		<position>bottom</position>
-		<position>footer</position>
+		<position>logo</position>
 	</positions>
 
 	<config>

@@ -1,1 +1,33 @@
 /* layout */
+#wrapper {
+	width: 1024px;
+	margin: 0 auto;
+	padding: 0 10px;
+	position: relative;
+}
+
+#header {
+	margin-right: 93px;
+	padding: 51px 0 22px;
+	border-bottom: 2px solid #4edb4b;
+}
+
+#body {}
+	#sidebar {
+		float: left;
+		width: 419px;
+	}
+	#content {
+		float: left;
+		margin-left: 40px;
+		width: 565px;
+	}
+		#top {}
+		#component {}
+		#bottom {}
+
+#logo {
+	position: absolute;
+	top: 0;
+	right: 0;
+}

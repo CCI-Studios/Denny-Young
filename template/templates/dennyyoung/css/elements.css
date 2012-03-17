@@ -1,17 +1,24 @@
 /* elements */
 body, select, input, textarea {
 	color: #444; /* off black */
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: "myriad-pro", Helvetica, Arial, sans-serif;
 }
 
 /* Headers (h1, h2, etc) have no default font-size or margin; define those yourself */
-h1, h2, h3, h4, h5, h6 { font-weight: bold; }
+h1, h2, h3, h4, h5, h6 { 
+	color: #233891;
+	font-weight: bold;
+	text-transform: lowercase;
+}
+
+h1 { font-size: 72px; }
+h2 { font-size: 24px; }
+h3 { font-size: 18px; }
+h4 { font-size: 16px; }
+h5, h6 { font-size: 14px; }
 
 a, a:active, a:visited {
-	color: #607890;
+	color: #4edb4b;
 	text-decoration: none;
 }
-a:hover {
-	color: #036;
-	text-decoration: underline;
-}
+a:hover { text-decoration: underline; }

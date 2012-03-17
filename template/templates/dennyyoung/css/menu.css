@@ -1,0 +1,34 @@
+.hmenu {
+	font-size: 18px;
+	text-transform: lowercase;
+}
+
+.hmenu .menu {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.hmenu .menu > li {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+
+	margin-left: 13px;
+	padding-left: 19px;
+	background: url(../images/menu-divider.png) left center no-repeat;
+}
+
+.hmenu .menu > li:first-child {
+	margin-left: 0;
+	padding-left: 0;
+	background: none;
+}
+
+.hmenu a {
+	color: #000;
+}
+
+.hmenu a:hover {
+	text-decoration: underline;
+}

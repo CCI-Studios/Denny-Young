@@ -24,13 +24,12 @@ if ($_SERVER['SERVER_PORT'] === 8888 ||
 	$testing = false;
 }
 
-$analytics = "UA-XXXXX-X"; // FIXME Update to client ID
+$analytics = "UA-27181882-1";
 ?>
 
 <head>
 	<meta charset="utf-8" />
-	<?= ($testing)? '':  '<meta http-equiv="X-UA-Compatible" contents="IE=edge,chrome=1">' ?>
-
+	<meta http-equiv="X-UA-Compatible" contents="IE=edge,chrome=1">
  	<jdoc:include type="head" />
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -50,28 +49,31 @@ $analytics = "UA-XXXXX-X"; // FIXME Update to client ID
 	<?php else: ?>
 		<script src="/templates/<?= $this->template ?>/js/libs/modernizr-1.7.min.js"></script>
 	<?php endif; ?>
+
+	<script type="text/javascript" src="http://use.typekit.com/hlu0rwl.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </head>
 
 <body class="<?= $menu ?>">
 
 	<div id="wrapper">
-		<header>
-			<jdoc:include type="modules" name ="header" style="xhtml" />
-		</header>
-
-		<div id="main">
-			<aside>
-				<jdoc:include type="modules" name="left" style="xhtml" />
-			</aside>
-
-			<article>
-				<jdoc:include type="component" />
-			</article>
+		<div id="header">
+			<jdoc:include type="modules" name="header" style="rounded" />
 		</div>
 
-		<footer>
-			<jdoc:include type="modules" name="footer" style="xhtml" />
-		</footer>
+		<div id="body">
+			<div id="sidebar"><jdoc:include type="modules" name="sidebar" style="rounded" /></div>
+
+			<div id="content">
+				<div id="top"><jdoc:include type="modules" name="top" style="rounded" /></div>
+				<div id="component"><jdoc:include type="component" /></div>
+				<div id="bottom"><jdoc:include type="modules" name="bottom" style="rounded" /></div>
+			</div>
+
+			<div class="clear"></div>
+		</div>
+
+		<div id="logo"><jdoc:include type="modules" name="logo" style="rounded" /></div>
 	</div>
 
 	<div class="hidden">
