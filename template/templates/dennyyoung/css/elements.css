@@ -27,4 +27,10 @@ a, a:active, a:visited {
 a:hover { text-decoration: underline; }
 
 p { line-height: 1.25em; }
-h1 + p { line-height: 1.5em; }
+h1 + p,
+blockquote + p { line-height: 1.5em; }
+
+blockquote {
+	font-style: italic;
+	color: #233891;
+}
