@@ -1,15 +1,29 @@
 /* styles */
-.clr, .clear { clear: both; }
-.left { float: left; }
-.right { float: right; }
+.clr, .clear {
+  clear: both; }
 
-.hidden { display: none; }
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.hidden {
+  display: none; }
 
 /* These selection declarations have to be separate
    No text-shadow: twitter.com/miketaylr/status/12228805301
    Also: hot pink! */
 /* TODO Update selection BG color */
-::-moz-selection{ background: #233891; color:#fff; text-shadow: none; }
-::selection { background:#233891; color:#fff; text-shadow: none; }
+::-moz-selection {
+  background: #233891;
+  color: #fff;
+  text-shadow: none; }
 
-.blue { color: #233891; }
+::selection {
+  background: #233891;
+  color: #fff;
+  text-shadow: none; }
+
+.blue {
+  color: #233891; }

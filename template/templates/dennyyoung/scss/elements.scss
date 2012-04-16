@@ -1,0 +1,43 @@
+/* elements */
+body, select, input, textarea {
+	color: #444; /* off black */
+	font-family: "myriad-pro", Trebuchet, Helvetica, Arial, sans-serif;
+	font-weight: 300;
+}
+
+/* Headers (h1, h2, etc) have no default font-size or margin; define those yourself */
+h1, h2, h3, h4, h5, h6 { 
+	color: #233891;
+	font-family: "myriad-pro-n3", "myriad-pro", Trebuchet, Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	text-transform: lowercase;
+	margin: .76em 0 .29em;
+}
+
+h1 { font-size: 62px; margin-right: -62px; }
+h2 { font-size: 24px; }
+h3 { font-size: 18px; }
+h4 { font-size: 16px; }
+h5, h6 { font-size: 14px; }
+
+a, a:active, a:visited {
+	color: #4edb4b;
+	text-decoration: none;
+}
+a:hover { text-decoration: underline; }
+
+p { line-height: 1.25em; }
+/*h1 + p,
+blockquote + p { line-height: 1.5em; }*/
+
+/*blockquote {
+	font-style: italic;
+}
+
+blockquote:first-letter {
+    float: left;
+    font-size: 47px;
+    line-height: 37px;
+    padding-right: 8px;
+    font-weight: 400;
+}*/
