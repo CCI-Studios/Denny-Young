@@ -147,10 +147,9 @@ namespace :deploy do
         chmod +x symlinker
       CMD
       
-      rum "mv #{public}/configuration.php #{deploy_to}/shared/config.php"
+      run "mv #{public}/configuration.php #{deploy_to}/shared/config.php"
       joomla::symlink
       joomla::install_default
-      joomla::cleanup
     end
   end
 
