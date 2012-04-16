@@ -11,3 +11,5 @@
 /* TODO Update selection BG color */
 ::-moz-selection{ background: #233891; color:#fff; text-shadow: none; }
 ::selection { background:#233891; color:#fff; text-shadow: none; }
+
+.blue { color: #233891; }

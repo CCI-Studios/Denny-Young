@@ -1,9 +1,9 @@
 /* @group hmenu */
 .hmenu {
 	margin: 0 93px 0 0;
-	padding: 51px 0 22px 16px;
+	padding: 51px 0 22px 0;
 	border-bottom: 2px solid #4edb4b;
-	font-size: 18px;
+	font-size: 17px;
 	text-transform: lowercase;
 }
 
@@ -19,8 +19,8 @@
 	*display: inline;
 	*zoom: 1;
 
-	margin-left: 10px;
-	padding-left: 18px;
+	margin-left: 9px;
+	padding-left: 17px;
 	background: url(../images/menu-divider.png) left center no-repeat;
 }
 
