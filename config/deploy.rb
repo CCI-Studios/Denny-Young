@@ -134,6 +134,26 @@ namespace :deploy do
     end
   end
 
+  task :restore do
+    transaction do
+      run "mkdir -p #{deploy_to}/releases"
+      run "mkdir -p #{deploy_to}/shared"
+      run "mkdir -p #{public}"
+      run "chmod 755 #{public}"
+
+      run <<-CMD
+        cd #{deploy_to}/shared &&
+        curl -sLk #{symlinker_url} > symlinker &&
+        chmod +x symlinker
+      CMD
+      
+      rum "mv #{public}/configuration.php #{deploy_to}/shared/config.php"
+      joomla::symlink
+      joomla::install_default
+      joomla::cleanup
+    end
+  end
+
   task :finalize_update, :except => { :no_release => true } do
     run "chmod -R g+w #{latest_release}" if fetch(:group_writable, true)
   end
