@@ -67,7 +67,7 @@ $analytics = "UA-27181882-1";
 					<div id="top"><jdoc:include type="modules" name="top" style="rounded" /></div>
 				<? endif; ?>
 				<div id="component">
-					<jdoc:include type="messages" />
+					<jdoc:include type="message" />
 					<jdoc:include type="component" />
 				</div>
 				<? if ($this->countModules('bottom')) :?>
