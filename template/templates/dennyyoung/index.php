@@ -24,6 +24,7 @@ if ($_SERVER['SERVER_PORT'] === 8888 ||
 	$testing = false;
 }
 
+$hasSidebar = !!$this->countModules('sidebar');
 JHTML::_('behavior.mootools');
 $analytics = "UA-27181882-1";
 ?>
@@ -58,10 +59,12 @@ $analytics = "UA-27181882-1";
 <body class="<?= $menu ?>">
 
 	<div id="header"><div><div><jdoc:include type="modules" name="header" style="rounded" /></div></div></div>
-	<div id="sidebar"><div><div><jdoc:include type="modules" name="sidebar" style="rounded" /></div></div></div>
+	<? if ($this->countModules('sidebar')): ?>
+		<div id="sidebar"><div><div><jdoc:include type="modules" name="sidebar" style="rounded" /></div></div></div>
+	<? endif; ?>
 
 	<div id="wrapper">
-		<div id="body">
+		<div id="body" <? echo ($hasSidebar)? '': 'class="wide"'; ?>>
 			<div id="content">
 				<? if ($this->countModules('top')): ?>
 					<div id="top"><jdoc:include type="modules" name="top" style="rounded" /></div>

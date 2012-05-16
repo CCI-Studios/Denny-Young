@@ -38,6 +38,12 @@ body.home #sidebar > div > div { width: 581px; }
 	position: relative;
 	padding: 97px 0 0 419px;
 	z-index: 3;
+
+	&.wide {
+		padding-left: 0;
+
+		#content { margin: 0; }
+	}
 }
 body.home #body { padding: 80px 0 0 457px; }
 	#content { margin: 0 62px 0 40px; }
